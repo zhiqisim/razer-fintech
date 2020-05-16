@@ -28,14 +28,7 @@ STORES = db.reference('stores')
 def create_store():
     try:
         store = request.json
-        categories = store.pop('categories')
-
         fb_obj_store = STORES.push(store)
-        for cat in categories:
-            items = cat.pop('items')
-            fb_obj_categories = fb_obj_store.child('categories').push(cat)
-            for item in items:
-                fb_obj_items = fb_obj_categories.child('items').push(item)
         return jsonify({'store_id': fb_obj_store.key}), 200, {'Content-Type': 'json; charset=utf-8'}
     except Exception as e:
         return f"An Error Occured: {e}", 500
@@ -57,6 +50,23 @@ def get_store(store_id):
         if not store:
             return jsonify({"error": "store not found"}), 200
         return jsonify(store), 200, {'Content-Type': 'json; charset=utf-8'}
+    except Exception as e:
+        return f"An Error Occured: {e}", 500
+
+@app.route('/store/<store_id>', methods=['PUT'])
+def update_store(store_id):
+    try:
+        fb_obj_store = STORES.child(str(store_id))
+        fb_obj_store.child('categories').delete()
+        store = request.json
+        categories = store.pop('categories')
+        for cat in categories:
+            items = cat.pop('items')
+            fb_obj_categories = fb_obj_store.child('categories').push(cat)
+            for item in items:
+                fb_obj_items = fb_obj_categories.child('items').push(item)
+
+        return jsonify({'store_id': fb_obj_store.key}), 200, {'Content-Type': 'json; charset=utf-8'}
     except Exception as e:
         return f"An Error Occured: {e}", 500
 
