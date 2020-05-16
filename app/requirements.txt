@@ -1,3 +1,4 @@
 flask
-PyJWT
 firebase-admin
+boto3
+awscli

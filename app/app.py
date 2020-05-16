@@ -1,9 +1,12 @@
 from flask import Flask, request, jsonify, g, send_file, session
 from firebase_admin import credentials, db, initialize_app
+from werkzeug.utils import secure_filename
+import boto3
 import json
-# import jwt
 import datetime
 import logging
+import os
+import tempfile
 # from werkzeug.security import generate_password_hash, check_password_hash
 # from .map import connect_to_gmaps, get_map_img
 # from functools import wraps
@@ -27,7 +30,18 @@ STORES = db.reference('stores')
 @app.route('/store', methods=['POST'])
 def create_store():
     try:
-        store = request.json
+        store = json.loads(request.form['data'])
+        if 'logo' not in request.files:
+            store['logo'] = 'https://razerhack.s3-ap-southeast-1.amazonaws.com/logo_default.png'
+        else:
+            image = request.files['logo']
+            client = boto3.client('s3',
+                region_name='ap-southeast-1',                          
+                aws_access_key_id=os.environ['AWS_ACCESS_KEY_ID'],
+                aws_secret_access_key=os.environ['AWS_SECRET_ACCESS_KEY'])
+
+            store['logo'] = put_image(image, client)
+
         fb_obj_store = STORES.push(store)
         return jsonify({'store_id': fb_obj_store.key}), 200, {'Content-Type': 'json; charset=utf-8'}
     except Exception as e:
@@ -38,7 +52,7 @@ def get_all_stores():
     try:
         stores = STORES.get()
         for stores_id in stores.keys():
-            stores[stores_id].pop('categories')
+            stores[stores_id].pop('categories', None)
         return jsonify(stores), 200, {'Content-Type': 'json; charset=utf-8'}
     except Exception as e:
         return f"An Error Occured: {e}", 500
@@ -59,7 +73,7 @@ def update_store(store_id):
         fb_obj_store = STORES.child(str(store_id))
         fb_obj_store.child('categories').delete()
         store = request.json
-        categories = store.pop('categories')
+        categories = store.pop('categories', None)
         for cat in categories:
             items = cat.pop('items')
             fb_obj_categories = fb_obj_store.child('categories').push(cat)
@@ -69,6 +83,18 @@ def update_store(store_id):
         return jsonify({'store_id': fb_obj_store.key}), 200, {'Content-Type': 'json; charset=utf-8'}
     except Exception as e:
         return f"An Error Occured: {e}", 500
+
+# Function to upload image to aws s3 and return the image url
+def put_image(image, client):  
+    image_file_name = secure_filename(image.filename)  
+    bucket = 'razerhack'
+    content_type = request.mimetype
+    client.put_object(Body=image,
+                  Bucket=bucket,
+                  Key=image_file_name,
+                  ContentType=content_type)
+    boto3.resource('s3').ObjectAcl('razerhack', image_file_name).put(ACL='public-read')
+    return 'https://razerhack.s3-ap-southeast-1.amazonaws.com/' + image_file_name
 
 # @app.route('/signup', methods=['POST'])
 # def signup():
