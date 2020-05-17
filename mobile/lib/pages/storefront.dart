@@ -30,6 +30,7 @@ class _StoreFrontState extends State<StoreFront> {
       ),
       body: WebView(
         initialUrl: selectedUrl,
+        javascriptMode: JavascriptMode.unrestricted,
         onWebViewCreated: (WebViewController webViewController) {
           _controller.complete(webViewController);
         },

@@ -7,6 +7,9 @@ import 'package:http/http.dart' as http;
 // pretty loading package
 import 'package:shimmer/shimmer.dart';
 
+// models
+import '../models/Reward.dart';
+
 
 class RewardsPage extends StatefulWidget {
   RewardsPage({Key key, this.title}) : super(key: key);
@@ -20,32 +23,30 @@ class RewardsPage extends StatefulWidget {
 class _RewardsPageState extends State<RewardsPage> {
   _RewardsPageState({Key key});
   Future<List<dynamic>> _getRewards() async {
-    // var url =
-    //     'http://ec2-13-250-45-244.ap-southeast-1.compute.amazonaws.com/vouchers';
-    // var response = await http.get(url);
+    var url =
+        'http://ec2-13-250-45-244.ap-southeast-1.compute.amazonaws.com/vouchers';
+    var response = await http.get(url);
 
-    // if (response.statusCode == 200) {
+    if (response.statusCode == 200) {
       // If the server did return a 200 OK response,
       // then parse the JSON.
-      // var bytesData = convert.utf8.decode(response.bodyBytes);
-      // print(bytesData);
-      // var jsonData = convert.json.decode(bytesData);
+      var bytesData = convert.utf8.decode(response.bodyBytes);
+      print(bytesData);
+      var jsonData = convert.json.decode(bytesData);
 
-      String filedata = await DefaultAssetBundle.of(context).loadString("assets/data.json");
-      final jsonResult = convert.json.decode(filedata);
-      print(jsonResult);
-      List<dynamic> data = jsonResult['data'];
+      List<dynamic> data = jsonData['data'];
       List<dynamic> rewardData = [];
-      for (var items in data) {
-        rewardData.add(items);
-      }
-      print(rewardData.length);
+      for (final s in data) {
+          Reward reward = Reward(
+              s['name']);
+          rewardData.add(reward);
+        }
       return rewardData;
-  //   } else {
-  //     // If the server did not return a 200 OK response,
-  //     // then throw an exception.
-  //     throw Exception('Failed to load stores');
-  //   }
+    } else {
+      // If the server did not return a 200 OK response,
+      // then throw an exception.
+      throw Exception('Failed to load stores');
+    }
   }
 
   Future<bool> claimDialog(BuildContext context) {
@@ -93,15 +94,7 @@ class _RewardsPageState extends State<RewardsPage> {
                       mainAxisSize: MainAxisSize.min,
                       children: <Widget>[
                         new ListTile(
-                          leading: CircleAvatar(
-                            backgroundColor: Colors.white,
-                            backgroundImage:
-                                NetworkImage(snapshot.data[index].images[0].url),
-                          ),
                           title: Text(snapshot.data[index].name),
-                          subtitle: Text(snapshot.data[index].merchant_name +
-                              "\n" +
-                              snapshot.data[index].description),
                           onTap: () {
                             claimDialog(context);
                           },

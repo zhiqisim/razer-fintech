@@ -88,7 +88,7 @@ class _CreateState extends State<Create> {
             builder: (context) => storefront.StoreFront(
                   title: postData['name'],
                   selectedUrl:
-                      "https://pub.dev/packages/webview_flutter#-readme-tab-",
+                      "http://f2d8405a.ngrok.io/new-store/" + jsonData['store_id'],
                 )));
   }
 
