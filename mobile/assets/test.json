@@ -1,0 +1,1144 @@
+{
+  "data": [
+    {
+      "id": 8901929,
+      "name": "Get 28% OFF with no minimum spend",
+      "valid_to": "2019-10-31T15:59:59.999Z",
+      "valid_from": "2019-09-30T16:00:00.000Z",
+      "voucher_code": "NEWABC",
+      "voucher_key": null,
+      "voucher_type": "code",
+      "state": "expired",
+      "given_by": null,
+      "given_to": null,
+      "given_date": null,
+      "issued_date": "2019-10-12T05:09:57.367Z",
+      "redemption_date": null,
+      "reservation_expires_at": null,
+      "redemption_type": {
+        "call_to_action": "https://www.zalora.com.my/",
+        "timer": 0,
+        "type": "online"
+      },
+      "reward": {
+        "id": 9607,
+        "name": "Get 28% OFF with no minimum spend",
+        "description": "Get 28% OFF with no minimum spend from Zalora",
+        "favourite": null,
+        "merchant_id": 198,
+        "merchant_name": "Zalora",
+        "merchant_website": null,
+        "merchant_logo_url": null,
+        "alt_merchant_name": null,
+        "alt_merchant_website": null,
+        "alt_merchant_text": null,
+        "ecommerce_only": true,
+        "brands": [],
+        "subtitle": null,
+        "valid_from": "2019-09-30T16:00:00.000Z",
+        "valid_to": "2019-10-31T15:59:59.999Z",
+        "selling_from": "2019-09-04T16:00:00.000Z",
+        "selling_to": "2019-12-31T15:59:00.000Z",
+        "eligible": true,
+        "distance": {
+          "value": null,
+          "unit_of_measure": "meter"
+        },
+        "images": [
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/9608/zaloranewthumbnailx3-2-2e6bbc41-610c-4524-8b89-18542518d5f2.jpg",
+            "type": "reward_logo_old"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/9608/zalora_60x60-f570e6a4-472a-4bb1-a111-b56bd27a0aed.jpg",
+            "type": "reward_logo_new"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/9608/thumbnails_zalora4-1-414x220-2c62d7b1-ba6f-40bc-a826-955553a87eac.jpg",
+            "type": "reward_banner_old"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/9608/thumbnails_zalora4-1-375x180-2ed35d0e-1e07-46be-a87c-8dedaca220f1.jpg",
+            "type": "reward_banner_new"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/9608/thumbnails_zalora4-1-512x512-c9c70767-72d1-4539-9bb9-4817cf0f4c72.jpg",
+            "type": "rewardhome_banner_new"
+          }
+        ],
+        "inventory": {
+          "reward_total_limit": null,
+          "reward_total_balance": null,
+          "minutes_per_period": null,
+          "period_start": null,
+          "reward_limit_per_period": null,
+          "reward_limit_per_period_balance": null,
+          "reward_limit_per_user": null,
+          "reward_limit_per_user_balance": null,
+          "minutes_per_user_period": 43829,
+          "per_user_period_start": "2019-10-31T16:00:00Z",
+          "reward_limit_per_user_per_period": 1,
+          "reward_limit_per_user_per_period_balance": {
+            "limit_type": "account_interval",
+            "available_amount": 1,
+            "limit_error_klass": null
+          }
+        },
+        "reward_price": [
+          {
+            "id": 9592,
+            "identifier": null,
+            "currency_code": "MYR",
+            "price": "0.0",
+            "points": 0,
+            "reward_currency": "MYR",
+            "reward_amount": "0.0"
+          }
+        ],
+        "custom_fields": {},
+        "terms_and_conditions": "<ul>\n  <li>Valid only at www.zalora.com.my/ZALORA mobile app for NEW user and single usage only</li>\n  <li>Voucher availability is base on first come first served, while stocks last</li>\n  <li>The Promo code is only applicable to items sold by ZALORA</li>\n  <li>Only one Promo Code may be used at a time</li>\n  <li>Not valid with other voucher code and promotions, unless otherwise stated</li>\n  <li>Free delivery is only applicable on paid price of RM75 and above</li>\n  <li>The Promo Code does not apply for certain excluded brands and item as set out at www.zalora.com.my/brand-exclusions</li>\n  <li>The Terms of Service set out at https://www.zalora.com.my/terms-of-use/ shall apply to all uses of the Promo Code</li>\n  <li>ZALORA reserves the right to change the Terms and Conditions or cancel any promotions at any time without prior notice</li>\n  <li>This voucher entitles customer to enjoy the special discounted price, no charging is done by ABC, customer is to make the payment directly to the merchant at outlet</li>\n  <li>Rewards vouchers are not exchangeable for cash, nor exchangeable for other Rewards vouchers under any circumstances. Rewards should not be sold, exchanged or transferred for value under any circumstances</li>\n  <li>For other Terms and Conditions refer to ABC.my/rewardstnc</li>\n</ul>",
+        "loyalty": [],
+        "social_handlers": {
+          "facebook": null,
+          "twitter": null
+        },
+        "tags": [],
+        "category_tags": [
+          {
+            "id": 110,
+            "title": "Shopping",
+            "parent": null
+          }
+        ],
+        "is_giftable": true,
+        "is_favorite": false
+      },
+      "custom_fields": {
+        "alternate_id": "677a4d34395741463774314b61594f7742565a4163773d3d",
+        "reward_price": {
+          "id": 9592,
+          "price": "0.0",
+          "points": null,
+          "created_at": "2019-09-04T16:11:01.950Z",
+          "identifier": null,
+          "updated_at": "2019-09-04T16:11:01.950Z",
+          "currency_code": "MYR",
+          "reward_campaign_id": 9607
+        }
+      }
+    },
+    {
+      "id": 8901926,
+      "name": "Get 25% OFF with minimum spend of RM250",
+      "valid_to": "2019-10-31T15:59:59.999Z",
+      "valid_from": "2019-09-30T16:00:00.000Z",
+      "voucher_code": "ABCNOW",
+      "voucher_key": null,
+      "voucher_type": "code",
+      "state": "expired",
+      "given_by": null,
+      "given_to": null,
+      "given_date": null,
+      "issued_date": "2019-10-12T05:09:49.460Z",
+      "redemption_date": null,
+      "reservation_expires_at": null,
+      "redemption_type": {
+        "call_to_action": "https://www.zalora.com.my/",
+        "timer": 0,
+        "type": "online"
+      },
+      "reward": {
+        "id": 9606,
+        "name": "Get 25% OFF with minimum spend of RM250",
+        "description": "Get 25% OFF with minimum spend of RM250 from Zalora",
+        "favourite": null,
+        "merchant_id": 198,
+        "merchant_name": "Zalora",
+        "merchant_website": null,
+        "merchant_logo_url": null,
+        "alt_merchant_name": null,
+        "alt_merchant_website": null,
+        "alt_merchant_text": null,
+        "ecommerce_only": true,
+        "brands": [],
+        "subtitle": null,
+        "valid_from": "2019-09-30T16:00:00.000Z",
+        "valid_to": "2019-10-31T15:59:59.999Z",
+        "selling_from": "2019-09-04T16:00:00.000Z",
+        "selling_to": "2019-12-31T15:59:00.000Z",
+        "eligible": true,
+        "distance": {
+          "value": null,
+          "unit_of_measure": "meter"
+        },
+        "images": [
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/9607/zaloranewthumbnailx3-2-2e6bbc41-610c-4524-8b89-18542518d5f2.jpg",
+            "type": "reward_logo_old"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/9607/zalora_60x60-f570e6a4-472a-4bb1-a111-b56bd27a0aed.jpg",
+            "type": "reward_logo_new"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/9607/thumbnails_zalora4-2-414x220-a8285ad4-e276-47c7-94cc-738ae34ed52b.jpg",
+            "type": "reward_banner_old"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/9607/thumbnails_zalora4-2-375x180-08f59a8c-c03d-4866-a25a-9b77b636851c.jpg",
+            "type": "reward_banner_new"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/9607/thumbnails_zalora4-2-512x512-31e479a4-f173-4f09-9fb0-1707055304a2.jpg",
+            "type": "rewardhome_banner_new"
+          }
+        ],
+        "inventory": {
+          "reward_total_limit": null,
+          "reward_total_balance": null,
+          "minutes_per_period": null,
+          "period_start": null,
+          "reward_limit_per_period": null,
+          "reward_limit_per_period_balance": null,
+          "reward_limit_per_user": null,
+          "reward_limit_per_user_balance": null,
+          "minutes_per_user_period": 43829,
+          "per_user_period_start": "2019-10-31T16:00:00Z",
+          "reward_limit_per_user_per_period": 1,
+          "reward_limit_per_user_per_period_balance": {
+            "limit_type": "account_interval",
+            "available_amount": 1,
+            "limit_error_klass": null
+          }
+        },
+        "reward_price": [
+          {
+            "id": 9591,
+            "identifier": null,
+            "currency_code": "MYR",
+            "price": "0.0",
+            "points": 0,
+            "reward_currency": "MYR",
+            "reward_amount": "0.0"
+          }
+        ],
+        "custom_fields": {},
+        "terms_and_conditions": "<ul>\n  <li>Valid for existing user</li>\n  <li>Voucher availability is base on first come first served, while stocks last</li>\n  <li>Valid only at www.zalora.com.my/ZALORA mobile app and can be used for multiple transactions</li>\n  <li>Valid with minimum purchase of RM250 and above</li>\n  <li>The Promo code is only applicable to items sold by ZALORA</li>\n  <li>Only one Promo Code may be used at a time</li>\n  <li>Not valid with other voucher code and promotions, unless otherwise stated</li>\n  <li>Free delivery is only applicable on paid price of RM75 and above</li>\n  <li>The Promo Code does not apply for certain excluded brands and item as set out at www.zalora.com.my/brand-exclusions</li>\n  <li>The Terms of Service set out at https://www.zalora.com.my/terms-of-use/ shall apply to all uses of the Promo Code</li>\n  <li>ZALORA reserves the right to change the Terms and Conditions or cancel any promotions at any time without prior notice</li>\n  <li>This voucher entitles customer to enjoy the special discounted price, no charging is done by ABC, customer is to make the payment directly to the merchant at outlet</li>\n  <li>Rewards vouchers are not exchangeable for cash, nor exchangeable for other Rewards vouchers under any circumstances. Rewards should not be sold, exchanged or transferred for value under any circumstances</li>\n  <li>For other Terms and Conditions refer to ABC.my/rewardstnc</li>\n</ul>",
+        "loyalty": [],
+        "social_handlers": {
+          "facebook": null,
+          "twitter": null
+        },
+        "tags": [],
+        "category_tags": [
+          {
+            "id": 110,
+            "title": "Shopping",
+            "parent": null
+          }
+        ],
+        "is_giftable": true,
+        "is_favorite": false
+      },
+      "custom_fields": {
+        "alternate_id": "677a4d34395741463774314b61594f7742565a4163773d3d",
+        "reward_price": {
+          "id": 9591,
+          "price": "0.0",
+          "points": null,
+          "created_at": "2019-09-04T16:06:16.408Z",
+          "identifier": null,
+          "updated_at": "2019-09-04T16:06:16.408Z",
+          "currency_code": "MYR",
+          "reward_campaign_id": 9606
+        }
+      }
+    },
+    {
+      "id": 9272480,
+      "name": "RM4.99 for a cup of Drink worth up to RM13.70",
+      "valid_to": "2019-10-31T15:59:00.000Z",
+      "valid_from": "2019-10-26T16:00:00.000Z",
+      "voucher_code": "TIGP9X99DEE",
+      "voucher_key": null,
+      "voucher_type": "barcode",
+      "state": "expired",
+      "given_by": null,
+      "given_to": null,
+      "given_date": null,
+      "issued_date": "2019-10-26T16:01:20.114Z",
+      "redemption_date": null,
+      "reservation_expires_at": null,
+      "redemption_type": {
+        "call_to_action": null,
+        "timer": 0,
+        "type": "offline"
+      },
+      "reward": {
+        "id": 11549,
+        "name": "RM4.99 for a cup of Drink worth up to RM13.70",
+        "description": "RM4.99 for a cup of Drink worth up to RM13.70",
+        "favourite": null,
+        "merchant_id": 4262,
+        "merchant_name": "Tiger Sugar",
+        "merchant_website": "https://www.facebook.com/TigersugarMsia/",
+        "merchant_logo_url": null,
+        "alt_merchant_name": null,
+        "alt_merchant_website": null,
+        "alt_merchant_text": null,
+        "ecommerce_only": false,
+        "brands": [],
+        "subtitle": "",
+        "valid_from": "2019-10-26T16:00:00.000Z",
+        "valid_to": "2019-10-31T15:59:00.000Z",
+        "selling_from": "2019-10-26T16:00:00.000Z",
+        "selling_to": "2019-10-29T15:59:00.000Z",
+        "eligible": true,
+        "distance": {
+          "value": null,
+          "unit_of_measure": "meter"
+        },
+        "images": [
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/11550/tiger-sugar_logo_60x60-76f2dbad-d58f-4c91-868d-aa12d75bea2d.jpg",
+            "type": "reward_logo_new"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/11550/tiger-sugar_logo_85x85-44a42cb8-5127-48a0-ba5b-c55f6ca39496.jpg",
+            "type": "reward_logo_old"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/11550/tiger-sugar_banner_512x512-68fdc728-f14b-4459-afd7-041546ad16ca.jpg",
+            "type": "rewardhome_banner_new"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/11550/tiger-sugar_thumbnail_385x180-5ad2f5bc-ee75-472a-acf5-f0da1ea9d906.jpg",
+            "type": "reward_banner_new"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/11550/tiger-sugar_thumbnail_414x220-0e221ae9-1a6c-4d96-ad45-564cd726cc00.jpg",
+            "type": "reward_banner_old"
+          }
+        ],
+        "inventory": {
+          "reward_total_limit": 2999,
+          "reward_total_balance": 0,
+          "minutes_per_period": null,
+          "period_start": null,
+          "reward_limit_per_period": null,
+          "reward_limit_per_period_balance": null,
+          "reward_limit_per_user": 1,
+          "reward_limit_per_user_balance": {
+            "available_amount": 0,
+            "limit_error_klass": {
+              "code": 4103,
+              "message": "No rewards available for the specified user due to account lifetime limit"
+            },
+            "limit_type": "account_lifetime"
+          },
+          "minutes_per_user_per_period": null,
+          "per_user_period_start": null,
+          "reward_limit_per_user_per_period": null,
+          "reward_limit_per_user_period_balance": null
+        },
+        "reward_price": [
+          {
+            "id": 11534,
+            "identifier": null,
+            "currency_code": "MYR",
+            "price": "4.99",
+            "points": 0,
+            "reward_currency": "MYR",
+            "reward_amount": "4.99"
+          }
+        ],
+        "custom_fields": {},
+        "terms_and_conditions": "<ul>\n  <li>Each user entitled for 1 voucher within the promotion period</li>\n  <li>Voucher availability is based on first come first served, while stocks last</li>\n  <li>The price is inclusive of SST</li>\n  <li>Subject to additional charges for value above RM13.70 and should the value of the receipt be lower than the voucher value, no change shall be given</li>\n  <li>Valid at all Tiger Sugar outlets in Malaysia</li>\n  <li>MyABC app voucher is not exchangeable for cash</li>\n  <li>Not valid with other promotions and/or vouchers</li>\n  <li>Do not click \"Redeem\" before you claim the voucher at the outlets, otherwise the offer will be invalidated and no replacement code will be provided</li>\n  <li>Tiger Sugar reserves the right to change the Terms and Conditions of this promotion at any time</li>\n  <li>Rewards vouchers are not exchangeable for cash, nor exchangeable for other Rewards vouchers under any circumstances. Rewards should not be sold, exchanged or transferred for value under any circumstances</li>\n  <li>For other Terms and Conditions refer to ABC.my/rewardstnc</li>\n</ul>",
+        "loyalty": [],
+        "social_handlers": {
+          "facebook": null,
+          "twitter": null
+        },
+        "tags": [],
+        "category_tags": [
+          {
+            "id": 111,
+            "title": "FnB",
+            "parent": null
+          }
+        ],
+        "is_giftable": true,
+        "is_favorite": false
+      },
+      "custom_fields": {
+        "alternate_id": "677a4d34395741463774314b61594f7742565a4163773d3d",
+        "reward_price": {
+          "id": 11534,
+          "price": "4.99",
+          "points": null,
+          "created_at": "2019-10-20T09:26:20.014Z",
+          "identifier": null,
+          "updated_at": "2019-10-20T09:32:57.279Z",
+          "currency_code": "MYR",
+          "reward_campaign_id": 11549
+        }
+      }
+    },
+    {
+      "id": 9331596,
+      "name": "RM2.99 for a drink worth RM6.50",
+      "valid_to": "2019-10-31T15:59:00.000Z",
+      "valid_from": "2019-10-26T16:00:00.000Z",
+      "voucher_code": "12106018592",
+      "voucher_key": null,
+      "voucher_type": "barcode",
+      "state": "expired",
+      "given_by": null,
+      "given_to": null,
+      "given_date": null,
+      "issued_date": "2019-10-28T09:31:54.910Z",
+      "redemption_date": null,
+      "reservation_expires_at": null,
+      "redemption_type": {
+        "call_to_action": null,
+        "timer": 0,
+        "type": "offline"
+      },
+      "reward": {
+        "id": 11548,
+        "name": "RM2.99 for a drink worth RM6.50",
+        "description": "RM2.99 for Tealive drink worth RM6.50",
+        "favourite": null,
+        "merchant_id": 166,
+        "merchant_name": "Tealive",
+        "merchant_website": null,
+        "merchant_logo_url": null,
+        "alt_merchant_name": null,
+        "alt_merchant_website": null,
+        "alt_merchant_text": null,
+        "ecommerce_only": false,
+        "brands": [],
+        "subtitle": "",
+        "valid_from": "2019-10-26T16:00:00.000Z",
+        "valid_to": "2019-10-31T15:59:00.000Z",
+        "selling_from": "2019-10-26T16:00:00.000Z",
+        "selling_to": "2019-10-29T15:59:00.000Z",
+        "eligible": true,
+        "distance": {
+          "value": null,
+          "unit_of_measure": "meter"
+        },
+        "images": [
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/11549/tealivenewthumbnailx3-1-18883d04-36a2-4196-867d-454d18ab34ec.jpg",
+            "type": "reward_banner_old"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/11549/tealivenewthumbnailx3-2-ab7a1410-1550-49d3-9ee1-f5bd9ed20bca.jpg",
+            "type": "reward_logo_old"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/11549/newthumbnails_tealive2-1d6e7d27-1575-44ef-9053-80f636bab8f4.jpg",
+            "type": "reward_logo_new"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/11549/newthumbnails_tealive1-90f017de-aebf-4140-a7e4-920bf89890cb.jpg",
+            "type": "reward_banner_new"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/11549/newthumbnails_tealive-512x512-bbc99486-d8e9-4195-b576-1f80053039fd.jpg",
+            "type": "rewardhome_banner_new"
+          }
+        ],
+        "inventory": {
+          "reward_total_limit": 15000,
+          "reward_total_balance": 0,
+          "minutes_per_period": null,
+          "period_start": null,
+          "reward_limit_per_period": null,
+          "reward_limit_per_period_balance": null,
+          "reward_limit_per_user": 1,
+          "reward_limit_per_user_balance": {
+            "available_amount": 0,
+            "limit_error_klass": {
+              "code": 4103,
+              "message": "No rewards available for the specified user due to account lifetime limit"
+            },
+            "limit_type": "account_lifetime"
+          },
+          "minutes_per_user_per_period": null,
+          "per_user_period_start": null,
+          "reward_limit_per_user_per_period": null,
+          "reward_limit_per_user_period_balance": null
+        },
+        "reward_price": [
+          {
+            "id": 11533,
+            "identifier": null,
+            "currency_code": "MYR",
+            "price": "2.99",
+            "points": 0,
+            "reward_currency": "MYR",
+            "reward_amount": "2.99"
+          }
+        ],
+        "custom_fields": {},
+        "terms_and_conditions": "<ul>\n  <li>Each user entitled for 1 voucher within the promotion period</li>\n  <li>Voucher availability is based on first come first served, while stocks last</li>\n  <li>Subject to additional charges for value above RM6.50</li>\n  <li>Valid at all Tealive outlets in Malaysia except Tealive in AEON Delica and Max Value outlets</li>\n  <li>MyABC app voucher is NOT entitled for BPoints/Thirstea Points collection</li>\n  <li>MyABC app voucher can only be used in a single transaction. Should the value of the receipt be lower than the voucher value, no change shall be given</li>\n  <li>MyABC app voucher is not exchangeable for cash</li>\n  <li>Not valid with other promotions and/or vouchers</li>\n  <li>Do not click \"Redeem\" before you claim the voucher at the outlets, otherwise the offer will be invalidated and no replacement code will be provided&nbsp;</li>\n  <li>Tealive reserves the right to change the Terms and Conditions of this promotion at any time</li>\n  <li>Rewards vouchers are not exchangeable for cash, nor exchangeable for other Rewards vouchers under any circumstances. Rewards should not be sold, exchanged or transferred for value under any circumstances</li>\n  <li>For other Terms and Conditions refer to ABC.my/rewardstnc</li>\n</ul>",
+        "loyalty": [],
+        "social_handlers": {
+          "facebook": null,
+          "twitter": null
+        },
+        "tags": [],
+        "category_tags": [
+          {
+            "id": 111,
+            "title": "FnB",
+            "parent": null
+          }
+        ],
+        "is_giftable": true,
+        "is_favorite": false
+      },
+      "custom_fields": {
+        "alternate_id": "677a4d34395741463774314b61594f7742565a4163773d3d",
+        "reward_price": {
+          "id": 11533,
+          "price": "2.99",
+          "points": null,
+          "created_at": "2019-10-20T09:01:38.169Z",
+          "identifier": null,
+          "updated_at": "2019-10-20T09:10:02.240Z",
+          "currency_code": "MYR",
+          "reward_campaign_id": 11548
+        }
+      }
+    },
+    {
+      "id": 9226882,
+      "name": "RM4.99 for an Art Class",
+      "valid_to": "2019-10-31T15:59:59.999Z",
+      "valid_from": "2019-09-30T16:00:00.000Z",
+      "voucher_code": "OCTI3H80ART",
+      "voucher_key": null,
+      "voucher_type": "barcode",
+      "state": "expired",
+      "given_by": null,
+      "given_to": null,
+      "given_date": null,
+      "issued_date": "2019-10-25T03:04:56.506Z",
+      "redemption_date": null,
+      "reservation_expires_at": null,
+      "redemption_type": {
+        "call_to_action": null,
+        "timer": 0,
+        "type": "offline"
+      },
+      "reward": {
+        "id": 11032,
+        "name": "RM4.99 for an Art Class",
+        "description": "RM4.99 for an Art Class from My Art Studio worth RM35",
+        "favourite": null,
+        "merchant_id": 2713,
+        "merchant_name": "My Art Studio",
+        "merchant_website": null,
+        "merchant_logo_url": null,
+        "alt_merchant_name": null,
+        "alt_merchant_website": null,
+        "alt_merchant_text": null,
+        "ecommerce_only": false,
+        "brands": [],
+        "subtitle": "",
+        "valid_from": "2019-09-30T16:00:00.000Z",
+        "valid_to": "2019-10-31T15:59:59.999Z",
+        "selling_from": "2019-09-30T16:00:00.000Z",
+        "selling_to": "2019-12-31T15:59:00.000Z",
+        "eligible": true,
+        "distance": {
+          "value": null,
+          "unit_of_measure": "meter"
+        },
+        "images": [
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/11033/thumbnails2_myart-60x60-9bb66f69-debc-4461-9f26-f32c66a70721.jpg",
+            "type": "reward_logo_old"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/11033/thumbnails2_myart-85x85-52adb7b9-2798-4cfd-9493-b17f7318510b.jpg",
+            "type": "reward_logo_new"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/11033/my-art-studio-art-class-375x180-1660cb8c-71f2-4575-865f-40be9bad3da1.jpg",
+            "type": "reward_banner_new"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/11033/my-art-studio-art-class-414x220-edcce971-fafe-4b43-ab15-f034eebe1f29.jpg",
+            "type": "reward_banner_old"
+          }
+        ],
+        "inventory": {
+          "reward_total_limit": 100,
+          "reward_total_balance": 86,
+          "minutes_per_period": null,
+          "period_start": null,
+          "reward_limit_per_period": null,
+          "reward_limit_per_period_balance": null,
+          "reward_limit_per_user": null,
+          "reward_limit_per_user_balance": null,
+          "minutes_per_user_period": 43829,
+          "per_user_period_start": "2019-10-31T16:00:00Z",
+          "reward_limit_per_user_per_period": 1,
+          "reward_limit_per_user_per_period_balance": {
+            "limit_type": "account_interval",
+            "available_amount": 1,
+            "limit_error_klass": null
+          }
+        },
+        "reward_price": [
+          {
+            "id": 11017,
+            "identifier": null,
+            "currency_code": "MYR",
+            "price": "4.99",
+            "points": 0,
+            "reward_currency": "MYR",
+            "reward_amount": "4.99"
+          }
+        ],
+        "custom_fields": {},
+        "terms_and_conditions": "<ul>\n  <li>Each user entitled for 1 voucher within the promotion period</li>\n  <li>Voucher availability is based on first come first served, while stocks last</li>\n  <li>Reservation is required at least one week in advance to ensure there is availability based on outlets</li>\n  <li>Booking subject to availability</li>\n  <li>Booking needs to be made by contacting MY ART Studio HQ at 014-3330941 by providing\n    <ol>\n      <li>Name</li>\n      <li>Date of reservation</li>\n      <li>Preferred location</li>\n      <li>Unique Codes</li>\n    </ol>\n  </li>\n  <li>Customer will be advised on the availability. Once availability is confirmed, walk into the class by presenting the code at the counter prior to the session</li>\n  <li>Rewards vouchers are not exchangeable for cash, nor exchangeable for other Rewards vouchers under any circumstances. Rewards should not be sold, exchanged or transferred for value under any circumstances</li>\n  <li>For other Terms and Conditions refer to ABC.my/rewardstnc</li>\n</ul>",
+        "loyalty": [],
+        "social_handlers": {
+          "facebook": null,
+          "twitter": null
+        },
+        "tags": [],
+        "category_tags": [
+          {
+            "id": 102,
+            "title": "Others",
+            "parent": null
+          }
+        ],
+        "is_giftable": true,
+        "is_favorite": false
+      },
+      "custom_fields": {
+        "alternate_id": "677a4d34395741463774314b61594f7742565a4163773d3d",
+        "reward_price": {
+          "id": 11017,
+          "price": "4.99",
+          "points": null,
+          "created_at": "2019-09-29T02:18:23.734Z",
+          "identifier": null,
+          "updated_at": "2019-09-29T02:18:23.734Z",
+          "currency_code": "MYR",
+          "reward_campaign_id": 11032
+        }
+      }
+    },
+    {
+      "id": 9340960,
+      "name": "Get RM20 OFF",
+      "valid_to": "2019-10-31T15:59:59.999Z",
+      "valid_from": "2019-09-30T16:00:00.000Z",
+      "voucher_code": "ABC20",
+      "voucher_key": null,
+      "voucher_type": "code",
+      "state": "expired",
+      "given_by": null,
+      "given_to": null,
+      "given_date": null,
+      "issued_date": "2019-10-28T15:19:07.327Z",
+      "redemption_date": null,
+      "reservation_expires_at": null,
+      "redemption_type": {
+        "call_to_action": null,
+        "timer": 0,
+        "type": "online"
+      },
+      "reward": {
+        "id": 10695,
+        "name": "Get RM20 OFF",
+        "description": "Get RM20 OFF for a new battery replacement service from Carput",
+        "favourite": null,
+        "merchant_id": 5122,
+        "merchant_name": "Carput",
+        "merchant_website": "www.carput.my",
+        "merchant_logo_url": "https://perx-cdn.s3.amazonaws.com/merchant/account/photo_url/5122/new_carput_logo_60x60-079e6ad2-0b01-4a19-8e34-35742c7db0dc.jpg",
+        "alt_merchant_name": null,
+        "alt_merchant_website": null,
+        "alt_merchant_text": null,
+        "ecommerce_only": true,
+        "brands": [],
+        "subtitle": null,
+        "valid_from": "2019-09-30T16:00:00.000Z",
+        "valid_to": "2019-10-31T15:59:59.999Z",
+        "selling_from": "2019-09-30T16:00:00.000Z",
+        "selling_to": "2020-09-30T15:59:00.000Z",
+        "eligible": true,
+        "distance": {
+          "value": null,
+          "unit_of_measure": "meter"
+        },
+        "images": [
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/10696/new_carput_logo_60x60-c12aa198-ab2a-4a84-b1e4-1f5bb8c7b8e2.jpg",
+            "type": "reward_logo_new"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/10696/new_carput_visual_375x180-d8de7a61-33e6-41f8-ae21-a50061e95bbb.jpg",
+            "type": "reward_banner_new"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/10696/old_carput_logo_85x85-1f804bcd-31c2-47d9-ae4f-4159bf368cdd.jpg",
+            "type": "reward_logo_old"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/10696/old_carput_visual_414x220-59810b9c-0e52-4350-8ae4-906ca96de1be.jpg",
+            "type": "reward_banner_old"
+          }
+        ],
+        "inventory": {
+          "reward_total_limit": null,
+          "reward_total_balance": null,
+          "minutes_per_period": null,
+          "period_start": null,
+          "reward_limit_per_period": null,
+          "reward_limit_per_period_balance": null,
+          "reward_limit_per_user": null,
+          "reward_limit_per_user_balance": null,
+          "minutes_per_user_per_period": null,
+          "per_user_period_start": null,
+          "reward_limit_per_user_per_period": null,
+          "reward_limit_per_user_period_balance": null
+        },
+        "reward_price": [
+          {
+            "id": 10680,
+            "identifier": null,
+            "currency_code": "MYR",
+            "price": "0.0",
+            "points": 0,
+            "reward_currency": "MYR",
+            "reward_amount": "0.0"
+          }
+        ],
+        "custom_fields": {},
+        "terms_and_conditions": "<ul>\n  <li>PROMO CODE: ABC20</li>\n  <li>Applicable for ABC users</li>\n  <li>Multiple usage applicable</li>\n  <li>Valid only for new battery purchase</li>\n  <li>Valid only in our coverage area (Kuala Lumpur, Penang, Johor, Melaka, Seremban and Ipoh)</li>\n  <li>Promotion is not valid with other ongoing promotions, discounts, vouchers or privilege cards.</li>\n  <li>Kindly download our Mobile Application at Google Playstore or Apple IOS [CARPUT]</li>\n  <li>This voucher entitles customer to enjoy the special discounted price, no charging is done by ABC, customer is to make the payment directly to the merchant at outlet</li>\n  <li>Rewards vouchers are not exchangeable for cash, nor exchangeable for other Rewards vouchers under any circumstances. Rewards should not be sold, exchanged or transferred for value under any circumstances</li>\n  <li>For other Terms and Conditions refer to ABC.my/rewardstnc</li>\n</ul>",
+        "loyalty": [],
+        "social_handlers": {
+          "facebook": null,
+          "twitter": null
+        },
+        "tags": [],
+        "category_tags": [
+          {
+            "id": 110,
+            "title": "Shopping",
+            "parent": null
+          }
+        ],
+        "is_giftable": true,
+        "is_favorite": false
+      },
+      "custom_fields": {
+        "alternate_id": "677a4d34395741463774314b61594f7742565a4163773d3d",
+        "reward_price": {
+          "id": 10680,
+          "price": "0.0",
+          "points": null,
+          "created_at": "2019-09-25T08:31:59.954Z",
+          "identifier": null,
+          "updated_at": "2019-09-25T08:31:59.954Z",
+          "currency_code": "MYR",
+          "reward_campaign_id": 10695
+        }
+      }
+    },
+    {
+      "id": 8589154,
+      "name": "50% off ABC WiFi pass from RM0.50 (NP:RM1)",
+      "valid_to": "2019-10-31T15:59:00.000Z",
+      "valid_from": "2019-09-26T16:00:00.000Z",
+      "voucher_code": null,
+      "voucher_key": null,
+      "voucher_type": "code",
+      "state": "expired",
+      "given_by": null,
+      "given_to": null,
+      "given_date": null,
+      "issued_date": "2019-10-01T07:36:12.131Z",
+      "redemption_date": null,
+      "reservation_expires_at": null,
+      "redemption_type": {
+        "call_to_action": "https://www.ABC.com.my/shop/unlimited-wifi-plans",
+        "timer": 0,
+        "type": "online"
+      },
+      "reward": {
+        "id": 10228,
+        "name": "50% off ABC WiFi pass from RM0.50 (NP:RM1)",
+        "description": "Introductory promotion. 50% off for all access unlimited WiFi pass at over 7,000 locations.",
+        "favourite": null,
+        "merchant_id": 5219,
+        "merchant_name": "ABC WiFi",
+        "merchant_website": "https://www.ABC.com.my/shop/unlimited-wifi-plans",
+        "merchant_logo_url": null,
+        "alt_merchant_name": null,
+        "alt_merchant_website": null,
+        "alt_merchant_text": null,
+        "ecommerce_only": false,
+        "brands": [],
+        "subtitle": null,
+        "valid_from": "2019-09-26T16:00:00.000Z",
+        "valid_to": "2019-10-31T15:59:00.000Z",
+        "selling_from": "2019-09-26T16:00:00.000Z",
+        "selling_to": "2019-10-31T15:59:00.000Z",
+        "eligible": true,
+        "distance": {
+          "value": null,
+          "unit_of_measure": "meter"
+        },
+        "images": [
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/10229/ABC_myABC85x85_r3-4f27f881-7382-4a97-a6c8-bc69d6a520b4.jpg",
+            "type": "reward_logo_old"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/10229/ABC_rewards_oldbanner-414x220-_r3-b4708821-27f1-4d8e-b09a-131905926893.jpg",
+            "type": "reward_banner_old"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/10229/ABC_myABC60x60_r3-f9766d79-1884-412e-8a77-ed61c9c4cad1.jpg",
+            "type": "reward_logo_new"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/10229/ABC_rewards_newbanner-512x512-_r3-ef0d744f-6aef-462f-befa-4e04fc1ec28f.jpg",
+            "type": "rewardhome_banner_new"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/10229/ABC_rewards_newhomebanner-810x375-_r3-8f68e8f5-b8fd-450e-87cc-fdf51736ff10.jpg",
+            "type": "reward_banner_new"
+          }
+        ],
+        "inventory": {
+          "reward_total_limit": null,
+          "reward_total_balance": null,
+          "minutes_per_period": null,
+          "period_start": null,
+          "reward_limit_per_period": null,
+          "reward_limit_per_period_balance": null,
+          "reward_limit_per_user": null,
+          "reward_limit_per_user_balance": null,
+          "minutes_per_user_per_period": null,
+          "per_user_period_start": null,
+          "reward_limit_per_user_per_period": null,
+          "reward_limit_per_user_period_balance": null
+        },
+        "reward_price": [
+          {
+            "id": 10213,
+            "identifier": null,
+            "currency_code": "MYR",
+            "price": "0.0",
+            "points": 0,
+            "reward_currency": "MYR",
+            "reward_amount": "0.0"
+          }
+        ],
+        "custom_fields": {},
+        "terms_and_conditions": "<ul>\n  <li>This reward does not give you ABC WiFi access.</li>\n  <li>ABC WiFi pass can only be purchased at the participating outlets above.</li>\n  <li>The introductory promo prices are only valid until 31st October 2019.&nbsp;</li>\n  <li>At ABC WiFi participating outlet, please ensure the WiFi settings is switched on before proceed to ABC-wifi.net</li>\n  <li>Quality of Service is benchmarked at 4Mbps.</li>\n  <li>Customer is entitled to WiFi connection upon purchase of a WiFi pass.</li>\n  <li>ABC WiFi is currently offer for ABC Customers only, for non ABC Customers, please stay tune for ABC WiFi next announcement.</li>\n  <li>All purchases for ABC WiFi will be charged to your Postpaid Bill or Prepaid Account Balance.</li>\n</ul>",
+        "loyalty": [],
+        "social_handlers": {
+          "facebook": null,
+          "twitter": null
+        },
+        "tags": [],
+        "category_tags": [
+          {
+            "id": 102,
+            "title": "Others",
+            "parent": null
+          }
+        ],
+        "is_giftable": true,
+        "is_favorite": false
+      },
+      "custom_fields": {
+        "alternate_id": "677a4d34395741463774314b61594f7742565a4163773d3d",
+        "reward_price": {
+          "id": 10213,
+          "price": "0.0",
+          "points": null,
+          "created_at": "2019-09-17T03:04:43.131Z",
+          "identifier": null,
+          "updated_at": "2019-09-17T03:04:43.131Z",
+          "currency_code": "MYR",
+          "reward_campaign_id": 10228
+        }
+      }
+    },
+    {
+      "id": 8565948,
+      "name": "50% off ABC WiFi pass from RM0.50 (NP:RM1)",
+      "valid_to": "2019-10-31T15:59:00.000Z",
+      "valid_from": "2019-09-26T16:00:00.000Z",
+      "voucher_code": null,
+      "voucher_key": null,
+      "voucher_type": "code",
+      "state": "expired",
+      "given_by": null,
+      "given_to": null,
+      "given_date": null,
+      "issued_date": "2019-09-30T06:41:27.567Z",
+      "redemption_date": null,
+      "reservation_expires_at": null,
+      "redemption_type": {
+        "call_to_action": "https://www.ABC.com.my/shop/unlimited-wifi-plans",
+        "timer": 0,
+        "type": "online"
+      },
+      "reward": {
+        "id": 10228,
+        "name": "50% off ABC WiFi pass from RM0.50 (NP:RM1)",
+        "description": "Introductory promotion. 50% off for all access unlimited WiFi pass at over 7,000 locations.",
+        "favourite": null,
+        "merchant_id": 5219,
+        "merchant_name": "ABC WiFi",
+        "merchant_website": "https://www.ABC.com.my/shop/unlimited-wifi-plans",
+        "merchant_logo_url": null,
+        "alt_merchant_name": null,
+        "alt_merchant_website": null,
+        "alt_merchant_text": null,
+        "ecommerce_only": false,
+        "brands": [],
+        "subtitle": null,
+        "valid_from": "2019-09-26T16:00:00.000Z",
+        "valid_to": "2019-10-31T15:59:00.000Z",
+        "selling_from": "2019-09-26T16:00:00.000Z",
+        "selling_to": "2019-10-31T15:59:00.000Z",
+        "eligible": true,
+        "distance": {
+          "value": null,
+          "unit_of_measure": "meter"
+        },
+        "images": [
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/10229/ABC_myABC85x85_r3-4f27f881-7382-4a97-a6c8-bc69d6a520b4.jpg",
+            "type": "reward_logo_old"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/10229/ABC_rewards_oldbanner-414x220-_r3-b4708821-27f1-4d8e-b09a-131905926893.jpg",
+            "type": "reward_banner_old"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/10229/ABC_myABC60x60_r3-f9766d79-1884-412e-8a77-ed61c9c4cad1.jpg",
+            "type": "reward_logo_new"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/10229/ABC_rewards_newbanner-512x512-_r3-ef0d744f-6aef-462f-befa-4e04fc1ec28f.jpg",
+            "type": "rewardhome_banner_new"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/10229/ABC_rewards_newhomebanner-810x375-_r3-8f68e8f5-b8fd-450e-87cc-fdf51736ff10.jpg",
+            "type": "reward_banner_new"
+          }
+        ],
+        "inventory": {
+          "reward_total_limit": null,
+          "reward_total_balance": null,
+          "minutes_per_period": null,
+          "period_start": null,
+          "reward_limit_per_period": null,
+          "reward_limit_per_period_balance": null,
+          "reward_limit_per_user": null,
+          "reward_limit_per_user_balance": null,
+          "minutes_per_user_per_period": null,
+          "per_user_period_start": null,
+          "reward_limit_per_user_per_period": null,
+          "reward_limit_per_user_period_balance": null
+        },
+        "reward_price": [
+          {
+            "id": 10213,
+            "identifier": null,
+            "currency_code": "MYR",
+            "price": "0.0",
+            "points": 0,
+            "reward_currency": "MYR",
+            "reward_amount": "0.0"
+          }
+        ],
+        "custom_fields": {},
+        "terms_and_conditions": "<ul>\n  <li>This reward does not give you ABC WiFi access.</li>\n  <li>ABC WiFi pass can only be purchased at the participating outlets above.</li>\n  <li>The introductory promo prices are only valid until 31st October 2019.&nbsp;</li>\n  <li>At ABC WiFi participating outlet, please ensure the WiFi settings is switched on before proceed to ABC-wifi.net</li>\n  <li>Quality of Service is benchmarked at 4Mbps.</li>\n  <li>Customer is entitled to WiFi connection upon purchase of a WiFi pass.</li>\n  <li>ABC WiFi is currently offer for ABC Customers only, for non ABC Customers, please stay tune for ABC WiFi next announcement.</li>\n  <li>All purchases for ABC WiFi will be charged to your Postpaid Bill or Prepaid Account Balance.</li>\n</ul>",
+        "loyalty": [],
+        "social_handlers": {
+          "facebook": null,
+          "twitter": null
+        },
+        "tags": [],
+        "category_tags": [
+          {
+            "id": 102,
+            "title": "Others",
+            "parent": null
+          }
+        ],
+        "is_giftable": true,
+        "is_favorite": false
+      },
+      "custom_fields": {
+        "alternate_id": "677a4d34395741463774314b61594f7742565a4163773d3d",
+        "reward_price": {
+          "id": 10213,
+          "price": "0.0",
+          "points": null,
+          "created_at": "2019-09-17T03:04:43.131Z",
+          "identifier": null,
+          "updated_at": "2019-09-17T03:04:43.131Z",
+          "currency_code": "MYR",
+          "reward_campaign_id": 10228
+        }
+      }
+    },
+    {
+      "id": 8953699,
+      "name": "RM4.99 for a voucher worth RM10",
+      "valid_to": "2019-10-31T15:59:00.000Z",
+      "valid_from": "2019-10-08T16:00:00.000Z",
+      "voucher_code": "DGSD117CVDMNJG",
+      "voucher_key": null,
+      "voucher_type": "code",
+      "state": "expired",
+      "given_by": null,
+      "given_to": null,
+      "given_date": null,
+      "issued_date": "2019-10-14T06:58:09.399Z",
+      "redemption_date": null,
+      "reservation_expires_at": null,
+      "redemption_type": {
+        "call_to_action": "https://shopee.com.my/",
+        "timer": 0,
+        "type": "online"
+      },
+      "reward": {
+        "id": 11318,
+        "name": "RM4.99 for a voucher worth RM10",
+        "description": "RM4.99 for a Shopee voucher worth RM10",
+        "favourite": null,
+        "merchant_id": 168,
+        "merchant_name": "Shopee",
+        "merchant_website": null,
+        "merchant_logo_url": null,
+        "alt_merchant_name": null,
+        "alt_merchant_website": null,
+        "alt_merchant_text": null,
+        "ecommerce_only": true,
+        "brands": [],
+        "subtitle": null,
+        "valid_from": "2019-10-08T16:00:00.000Z",
+        "valid_to": "2019-10-31T15:59:00.000Z",
+        "selling_from": "2019-10-08T16:00:00.000Z",
+        "selling_to": "2019-10-24T01:55:00.000Z",
+        "eligible": true,
+        "distance": {
+          "value": null,
+          "unit_of_measure": "meter"
+        },
+        "images": [
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/11319/shopeenewthumbnailx3-1-a30359d0-bfb8-4fe6-976f-ac1044402537.jpg",
+            "type": "reward_banner_old"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/11319/shopeenewthumbnailx3-2-e0d4b896-8eb0-4a46-812f-fb2da79cbc05.jpg",
+            "type": "reward_logo_old"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/11319/newthumbnails_shopee2-4bec2840-63b6-45d6-9f88-ccd728268d6f.jpg",
+            "type": "reward_logo_new"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/11319/newthumbnails_shopee1-5cecf273-8832-458c-8142-c9bd0ac6cdc8.jpg",
+            "type": "reward_banner_new"
+          },
+          {
+            "url": "https://perx-cdn.s3.amazonaws.com/reward/item/images/11319/newthumbnails_shopee-512x512-56b8c676-1cf0-4e79-a38d-e8372f625971.jpg",
+            "type": "rewardhome_banner_new"
+          }
+        ],
+        "inventory": {
+          "reward_total_limit": 10000,
+          "reward_total_balance": 0,
+          "minutes_per_period": null,
+          "period_start": null,
+          "reward_limit_per_period": null,
+          "reward_limit_per_period_balance": null,
+          "reward_limit_per_user": 1,
+          "reward_limit_per_user_balance": {
+            "available_amount": 0,
+            "limit_error_klass": {
+              "code": 4103,
+              "message": "No rewards available for the specified user due to account lifetime limit"
+            },
+            "limit_type": "account_lifetime"
+          },
+          "minutes_per_user_per_period": null,
+          "per_user_period_start": null,
+          "reward_limit_per_user_per_period": null,
+          "reward_limit_per_user_period_balance": null
+        },
+        "reward_price": [
+          {
+            "id": 11303,
+            "identifier": null,
+            "currency_code": "MYR",
+            "price": "4.99",
+            "points": 0,
+            "reward_currency": "MYR",
+            "reward_amount": "4.99"
+          }
+        ],
+        "custom_fields": {},
+        "terms_and_conditions": "<ul>\n  <li>Each user entitled for 1 voucher within the promotion period</li>\n  <li>Voucher availability is based on first come first served, while stocks last</li>\n  <li>The promotion is only applicable at Shopee MY mobile app</li>\n  <li>Promo code must be entered into checkout page of Shopee App only</li>\n  <li>The promotion is valid for new &amp; existing users</li>\n  <li>The promotion is valid for one-time use only</li>\n  <li>Vouchers are not refundable, non-transferable, and are not redeemable for cash</li>\n  <li>The voucher is applicable to products for Shopee Mall &amp; Preferred Sellers only</li>\n  <li>This voucher is NOT applicable for any Mobile Top Up and Prepaid Card</li>\n  <li>This voucher is NOT applicable for Diapers &amp; Potties, Baby Food &amp; Baby Formula, Tickets and Vouchers categories, Gaming Top-Ups, S-Mart Milo &amp; Automotive Merchandise</li>\n  <li>Applicable to payments involving Shopee Guarantee (credit card, online banking &amp; bank transfer only)</li>\n  <li>Not applicable to payments via Buyer-Seller Arrangement</li>\n  <li>Terms and Conditions are subject to change without prior notice</li>\n  <li>Rewards vouchers are not exchangeable for cash, nor exchangeable for other Rewards vouchers under any circumstances. Rewards should not be sold, exchanged or transferred for value under any circumstances</li>\n  <li>For other Terms and Conditions refer to ABC.my/rewardstnc</li>\n</ul>",
+        "loyalty": [],
+        "social_handlers": {
+          "facebook": null,
+          "twitter": null
+        },
+        "tags": [],
+        "category_tags": [
+          {
+            "id": 110,
+            "title": "Shopping",
+            "parent": null
+          }
+        ],
+        "is_giftable": true,
+        "is_favorite": false
+      },
+      "custom_fields": {
+        "alternate_id": "677a4d34395741463774314b61594f7742565a4163773d3d",
+        "reward_price": {
+          "id": 11303,
+          "price": "4.99",
+          "points": null,
+          "created_at": "2019-10-09T10:14:47.601Z",
+          "identifier": null,
+          "updated_at": "2019-10-09T10:14:47.601Z",
+          "currency_code": "MYR",
+          "reward_campaign_id": 11318
+        }
+      }
+    }
+  ],
+  "meta": {
+    "count": 9,
+    "size": 10,
+    "page": 1,
+    "total_pages": 1,
+    "order": null,
+    "type": null
+  }
+}
