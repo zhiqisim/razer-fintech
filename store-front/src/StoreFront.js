@@ -83,7 +83,7 @@ export default function StoreFront(props) {
           <Promos/>
         </Container>
         <Container className={styles.body}>
-          <MenuItemList data={storeData}/>
+          <MenuItemList data={storeData} storeId={storeId}/>
         </Container>
       </Container>
     );
