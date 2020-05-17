@@ -6,15 +6,14 @@ import Error from './Error';
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Switch>
-          <Route path="/new-store" component={ NewStore } />
-          <Route path="/:appName" component={ StoreFront } />
-          <Route component={ Error } />
-        </Switch>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/new-store/:appId" component={ NewStore } />
+        <Route path="/view/:appId" component={ StoreFront } />
+        <Route component={ Error } />
+      </Switch>
+    </BrowserRouter>
+  
   );
 }
 

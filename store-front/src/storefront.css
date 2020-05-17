@@ -1,0 +1,16 @@
+.containerOverall{
+  padding:0;
+  padding-left: 0;
+  padding-right: 0;
+  height:100;
+  width:100;
+}
+.background {
+  background: rgb(54,247,4);
+  background: linear-gradient(135deg, rgba(54,247,4,0.8804564061952906) 13%, rgba(45,253,29,1) 45%, rgba(255,255,255,1) 100%);
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 20;
+  margin-left: 0;
+  margin-right: 0;
+}

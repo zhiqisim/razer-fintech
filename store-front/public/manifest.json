@@ -1,6 +1,6 @@
 {
-  "short_name": "Store Front",
-  "name": "Store Front",
+  "short_name": "Mini App Store Front",
+  "name": "Mini App Store Front",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
