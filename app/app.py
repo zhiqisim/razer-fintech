@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify, g, send_file, session
+from flask_cors import CORS, cross_origin
 from firebase_admin import credentials, db, initialize_app
 from werkzeug.utils import secure_filename
 import boto3
@@ -18,7 +19,9 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
+cors = CORS(app)
 app.config.from_json('config.json')
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 # Initialize Firestore DB
 cred = credentials.Certificate(app.config['FIREBASE'])
@@ -26,8 +29,14 @@ default_app = initialize_app(cred, options={
     'databaseURL': 'https://razer-fintech.firebaseio.com'
 })
 STORES = db.reference('stores')
+ORDERS = db.reference('orders')
+
+perx_hostname = 'https://api.perxtech.io'
+user_bearer_token = os.environ['USER_LEVEL_TOKEN']
+app_bearer_token = os.environ['APP_LEVEL_TOKEN']
 
 @app.route('/store', methods=['POST'])
+@cross_origin()
 def create_store():
     try:
         store = json.loads(request.form['data'])
@@ -48,6 +57,7 @@ def create_store():
         return f"An Error Occured: {e}", 500
 
 @app.route('/store', methods=['GET'])
+@cross_origin()
 def get_all_stores():
     try:
         stores = STORES.get()
@@ -58,6 +68,7 @@ def get_all_stores():
         return f"An Error Occured: {e}", 500
 
 @app.route('/store/<store_id>', methods=['GET'])
+@cross_origin()
 def get_store(store_id):
     try:
         store = STORES.child(str(store_id)).get()
@@ -68,6 +79,7 @@ def get_store(store_id):
         return f"An Error Occured: {e}", 500
 
 @app.route('/store/<store_id>', methods=['PUT'])
+@cross_origin()
 def update_store(store_id):
     try:
         fb_obj_store = STORES.child(str(store_id))
@@ -96,73 +108,25 @@ def put_image(image, client):
     boto3.resource('s3').ObjectAcl('razerhack', image_file_name).put(ACL='public-read')
     return 'https://razerhack.s3-ap-southeast-1.amazonaws.com/' + image_file_name
 
-# @app.route('/signup', methods=['POST'])
-# def signup():
-#     """
-#     Input: username, chat_id
-#     Output: user_id
-#     """
-#     data = request.get_json()
-#     username = data["username"]
-#     chat_id = data["chat_id"]
-#     # add to firebase
-#     try:
-#         users_ref.document(str(chat_id)).set(request.json)
-#         status_code = 201
-#         response = {
-#             "message": "success",
-#         }
-#         return json.dumps(response), status_code, {'Content-Type': 'json; charset=utf-8'}
-#     except Exception as e:
-#         return f"An Error Occured: {e}", 500
+@app.route('/purchase/<store_id>', methods=['POST'])
+@cross_origin()
+def store_purchase(store_id):
+    try:
+        order = request.json
+        fb_obj_store = STORES.child(str(store_id))
+        fb_obj_order = fb_obj_store.child('orders').push(order)
+        order['store_id'] = store_id
+        fb_order = ORDERS.push(order)
+        return jsonify(fb_order.get()), 200, {'Content-Type': 'json; charset=utf-8'}
+    except Exception as e:
+        return f"An Error Occured: {e}", 500
 
-# @app.route('/write-diary', methods=['POST'])
-# def write_data():
-#     """
-#     Input: **
-#     Output: **
-#     """
-#     data = request.get_json()
-#     chat_id = data["chat_id"]
-#     title = data["title"]
-#     diary_post = data["diary_post"]
-#     today = datetime.date.today()
-#     dateToday = today.strftime("%Y-%m-%d")
-#     response = {
-#         "title": title,
-#         "diary_post": diary_post,
-#         "date": today.strftime("%d/%m/%Y")
-#     }
-#     logger.info(response)
+@app.route('/orders', methods=['GET'])
+@cross_origin()
+def get_orders():
+    try:
+        fb_obj_orders = ORDERS.get()
+        return jsonify(fb_obj_orders), 200, {'Content-Type': 'json; charset=utf-8'}
+    except Exception as e:
+        return f"An Error Occured: {e}", 500  
 
-#     # add to firebase
-#     try:
-#         users_ref.document(str(chat_id)).collection("diary").add(response)
-#         status_code = 201
-#         response = {
-#             "message": "success",
-#         }
-#         return json.dumps(response), status_code, {'Content-Type': 'json; charset=utf-8'}
-#     except Exception as e:
-#         return f"An Error Occured: {e}", 500
-
-    
-
-# @app.route('/read-diary', methods=['GET'])
-# def read_data():
-#     """
-#     Params: **
-#     Output: **
-#     """
-#     chat_id = request.args.get('id')
-#     # retrieve from firebase
-#     try:
-#         # Check if ID was passed to URL query
-#         # if chat_id:
-#         #     diaries = users_ref.document(chat_id).get()
-#         #     return jsonify(diaries.to_dict()), 200
-#         # else:
-#         all_diaries = [doc.to_dict() for doc in users_ref.document(str(chat_id)).collection("diary").stream()]
-#         return jsonify(all_diaries), 200, {'Content-Type': 'json; charset=utf-8'}
-#     except Exception as e:
-#         return f"An Error Occured: {e}", 500
