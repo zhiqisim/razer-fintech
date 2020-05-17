@@ -1,0 +1,8 @@
+{
+  "short_name": "Mini App Store Front",
+  "name": "Mini App Store Front",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
