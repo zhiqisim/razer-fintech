@@ -30,7 +30,8 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop: theme.spacing(2)
+    paddingTop: theme.spacing(1),
+    paddingBottom: theme.spacing(1)
   }
 }));
 
@@ -64,13 +65,19 @@ export default function MenuItem(data) {
     } position="center center">
       <div className={styles.purchase}>
         <Container>
-          <img src={require("./images/bbt.jpg")} className={styles.purchaseImg}/>
-          <Typography variant='h6'>
-            {data.name}
-          </Typography>
-          <Typography>
-            {data.price}
-          </Typography>
+          <Row className={styles.iconRow}>
+            <img src={require("./images/bbt.jpg")} className={styles.purchaseImg}/>
+          </Row>
+          <Row className={styles.iconRow}>
+            <Typography variant='h6'>
+              {data.name}
+            </Typography>
+          </Row>
+          <Row className={styles.iconRow}>
+            <Typography>
+              {data.price}
+            </Typography>
+          </Row>
           <Row className={styles.iconRow}>
             <IconButton color="black" aria-label="add to shopping cart">
               <AddShoppingCartIcon />
