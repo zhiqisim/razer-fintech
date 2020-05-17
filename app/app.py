@@ -7,7 +7,7 @@ import json
 import datetime
 import logging
 import os
-import tempfile
+import requests
 # from werkzeug.security import generate_password_hash, check_password_hash
 # from .map import connect_to_gmaps, get_map_img
 # from functools import wraps
@@ -31,9 +31,9 @@ default_app = initialize_app(cred, options={
 STORES = db.reference('stores')
 ORDERS = db.reference('orders')
 
-perx_hostname = 'https://api.perxtech.io'
-user_bearer_token = os.environ['USER_LEVEL_TOKEN']
-app_bearer_token = os.environ['APP_LEVEL_TOKEN']
+perx_hostname = 'https://api.perxtech.io/v4/'
+perx_header_app = {'content-type': 'application/json', "Authorization": "Bearer " + os.environ['APP_LEVEL_TOKEN']}
+perx_header_user = {'content-type': 'application/json', "Authorization": "Bearer " + os.environ['USER_LEVEL_TOKEN']}
 
 @app.route('/store', methods=['POST'])
 @cross_origin()
@@ -96,6 +96,29 @@ def update_store(store_id):
     except Exception as e:
         return f"An Error Occured: {e}", 500
 
+@app.route('/purchase/<store_id>', methods=['POST'])
+@cross_origin()
+def store_purchase(store_id):
+    try:
+        order = request.json
+        fb_obj_store = STORES.child(str(store_id))
+        fb_obj_order = fb_obj_store.child('orders').push(order)
+        order['store_id'] = store_id
+        fb_order = ORDERS.push(order)
+        perx_create_transaction(fb_order.key, fb_order.get()['total'])
+        return jsonify(fb_order.get()), 200, {'Content-Type': 'json; charset=utf-8'}
+    except Exception as e:
+        return f"An Error Occured: {e}", 500
+
+@app.route('/orders', methods=['GET'])
+@cross_origin()
+def get_orders():
+    try:
+        fb_obj_orders = ORDERS.get()
+        return jsonify(fb_obj_orders), 200, {'Content-Type': 'json; charset=utf-8'}
+    except Exception as e:
+        return f"An Error Occured: {e}", 500  
+
 # Function to upload image to aws s3 and return the image url
 def put_image(image, client):  
     image_file_name = secure_filename(image.filename)  
@@ -108,25 +131,24 @@ def put_image(image, client):
     boto3.resource('s3').ObjectAcl('razerhack', image_file_name).put(ACL='public-read')
     return 'https://razerhack.s3-ap-southeast-1.amazonaws.com/' + image_file_name
 
-@app.route('/purchase/<store_id>', methods=['POST'])
-@cross_origin()
-def store_purchase(store_id):
-    try:
-        order = request.json
-        fb_obj_store = STORES.child(str(store_id))
-        fb_obj_order = fb_obj_store.child('orders').push(order)
-        order['store_id'] = store_id
-        fb_order = ORDERS.push(order)
-        return jsonify(fb_order.get()), 200, {'Content-Type': 'json; charset=utf-8'}
-    except Exception as e:
-        return f"An Error Occured: {e}", 500
+# Function to create new order
+def perx_create_transaction(order_id, total):
+    data = {"user_account_id": 1, "transaction_data": { "transaction_type": "purchase", "transaction_reference": order_id, "amount": total, "currency": "SGD", "properties": {}}}
+    response = requests.post(perx_hostname + "pos/transactions", data=json.dumps(data), headers=perx_header_app)
+    if response.status_code != 200:
+        logger.info(response)
+    logger.info(response.text)
+    return response.text
 
-@app.route('/orders', methods=['GET'])
+@app.route('/vouchers', methods=['GET'])
 @cross_origin()
-def get_orders():
+def get_vouchers():
     try:
-        fb_obj_orders = ORDERS.get()
-        return jsonify(fb_obj_orders), 200, {'Content-Type': 'json; charset=utf-8'}
+        response = requests.get(perx_hostname + "vouchers", headers=perx_header_user)
+        if response.status_code != 200:
+            logger.info(response)
+        logger.info(response.text)
+        return response.content, 200, {'Content-Type': 'json; charset=utf-8'}
     except Exception as e:
         return f"An Error Occured: {e}", 500  
 
