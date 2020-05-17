@@ -1,3 +1,5 @@
 flask
-PyJWT
+flask_cors
 firebase-admin
+boto3
+awscli
