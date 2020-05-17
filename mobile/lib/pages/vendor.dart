@@ -14,6 +14,8 @@ import './createStore.dart' as create;
 import './storefront.dart' as storefront;
 import './orders.dart' as orders;
 
+import 'package:url_launcher/url_launcher.dart';
+
 class VendorPage extends StatefulWidget {
   VendorPage({Key key, this.title}) : super(key: key);
 
@@ -58,6 +60,15 @@ class _VendorPageState extends State<VendorPage> {
       throw Exception('Failed to load stores');
     }
   }
+
+   _launchURL() async {
+  const url = 'http://f2d8405a.ngrok.io/view/-M7Uxd38h4VrBpRe6Mk-';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
 
   @override
   Widget build(BuildContext context) {
@@ -128,14 +139,15 @@ class _VendorPageState extends State<VendorPage> {
                                 style: TextStyle(fontSize: 10.0)),
                           ])),
                           onTap: () {
-                            Navigator.push(
-                                context,
-                                new MaterialPageRoute(
-                                    builder: (context) => storefront.StoreFront(
-                                          title: snapshot.data[index].name,
-                                          selectedUrl:
-                                              "https://zhiqisim.github.io/",
-                                        )));
+                            _launchURL();
+                            // Navigator.push(
+                            //     context,
+                            //     new MaterialPageRoute(
+                            //         builder: (context) => storefront.StoreFront(
+                            //               title: snapshot.data[index].name,
+                            //               selectedUrl:
+                            //                   "https://f2d8405a.ngrok.io/create-store/-M7Uxd38h4VrBpRe6Mk-",
+                            //             )));
                           },
                         ));
                   });

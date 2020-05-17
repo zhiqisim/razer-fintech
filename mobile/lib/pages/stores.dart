@@ -13,6 +13,8 @@ import '../models/Store.dart';
 import './storefront.dart' as storefront;
 import './rewards.dart' as rewards;
 
+import 'package:url_launcher/url_launcher.dart';
+
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
@@ -56,6 +58,15 @@ class _MyHomePageState extends State<MyHomePage> {
       throw Exception('Failed to load stores');
     }
   }
+
+  _launchURL() async {
+  const url = 'http://f2d8405a.ngrok.io/view/-M7Uxd38h4VrBpRe6Mk-';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
 
   @override
   Widget build(BuildContext context) {
@@ -118,14 +129,15 @@ class _MyHomePageState extends State<MyHomePage> {
                                 style: TextStyle(fontSize: 10.0)),
                           ])),
                           onTap: () {
-                            Navigator.push(
-                                context,
-                                new MaterialPageRoute(
-                                    builder: (context) => storefront.StoreFront(
-                                          title: snapshot.data[index].name,
-                                          selectedUrl:
-                                          "http://f2d8405a.ngrok.io/view/-M7Uxd38h4VrBpRe6Mk-/"
-                                        )));
+                            _launchURL();
+                            // Navigator.push(
+                            //     context,
+                            //     new MaterialPageRoute(
+                            //         builder: (context) => storefront.StoreFront(
+                            //               title: snapshot.data[index].name,
+                            //               selectedUrl:
+                            //               "http://f2d8405a.ngrok.io/view/-M7Uxd38h4VrBpRe6Mk-"
+                            //             )
                           },
                         ));
                   });

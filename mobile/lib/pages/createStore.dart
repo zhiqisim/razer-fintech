@@ -14,6 +14,8 @@ import '../models/Store.dart';
 // pages
 import './storefront.dart' as storefront;
 
+import 'package:url_launcher/url_launcher.dart';
+
 class Create extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -82,15 +84,24 @@ class _CreateState extends State<Create> {
     var jsonData = convert.json.decode(responseString);
     print(jsonData['store_id']);
     Navigator.of(context).pop(true);
-    Navigator.push(
-        context,
-        new MaterialPageRoute(
-            builder: (context) => storefront.StoreFront(
-                  title: postData['name'],
-                  selectedUrl:
-                      "http://f2d8405a.ngrok.io/new-store/" + jsonData['store_id'],
-                )));
+    _launchURL("http://f2d8405a.ngrok.io/new-store/" + jsonData['store_id']);
+    // Navigator.push(
+    //     context,
+    //     new MaterialPageRoute(
+    //         builder: (context) => storefront.StoreFront(
+    //               title: postData['name'],
+    //               selectedUrl:
+    //                   "http://f2d8405a.ngrok.io/new-store/" + jsonData['store_id'],
+    //             )));
   }
+
+     _launchURL(String urllink) async {
+  if (await canLaunch(urllink)) {
+    await launch(urllink);
+  } else {
+    throw 'Could not launch $urllink';
+  }
+}
 
   Future getImage() async {
     var image = await ImagePicker.pickImage(source: ImageSource.gallery);
