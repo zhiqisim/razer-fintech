@@ -47,7 +47,6 @@ export default function MenuItemList(data) {
   // Get data for menu
   const extractedData = extractData(data.data);
   
-  console.log(extractedData)
   
   return (
     <Container className={styles.container}>
