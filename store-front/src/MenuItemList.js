@@ -24,8 +24,6 @@ function extractData(data){
   const categories = data.categories;
   const extractedData = [];
   
-  console.log(data)
-  
   for (let categoryId in categories){
     let categoryObj = categories[categoryId];
     let items = categoryObj.items;
@@ -43,7 +41,6 @@ function extractData(data){
 
 export default function MenuItemList(data) {
   const styles = useStyles();
-  
   // Get data for menu
   const extractedData = extractData(data.data);
   
@@ -51,9 +48,9 @@ export default function MenuItemList(data) {
   return (
     <Container className={styles.container}>
       <SearchBar className={styles.searchbar}/>
-      {extractedData.map(data => (
+      {extractedData.map(d => (
         <Row className={styles.datarow}>
-          <MenuItem name={data.name} price={'$' + data.price}/>
+          <MenuItem name={d.name} price={'$' + d.price} data={data}/>
         </Row>
       ))}
     </Container>

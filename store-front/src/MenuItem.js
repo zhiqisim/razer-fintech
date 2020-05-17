@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Container, CardActionArea, IconButton, Typography, makeStyles } from '@material-ui/core';
+import { Button, Card, Container, CardActionArea, IconButton, Typography, makeStyles } from '@material-ui/core';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import PaymentIcon from '@material-ui/icons/Payment';
 import { Row, Col } from 'react-bootstrap';
@@ -37,12 +37,33 @@ const useStyles = makeStyles(theme => ({
 
 export default function MenuItem(data) {
   const styles = useStyles();
-  console.log('MenuItem')
+  let storeId = data.data.storeId;
   console.log(data)
   
-  function purchaseItem(){
+  const purchaseItem = () => {
+    let response = {
+      'Storename': data.data.data.name,
+      'items': [
+      ],
+    }
     
+    fetch(
+      'http://ec2-13-250-45-244.ap-southeast-1.compute.amazonaws.com/store/' + storeId,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(response)
+      },
+    ).then(reponse => {
+      alert('Success! Redirecting to your new store!');
+      window.location.href = 'http://f2d8405a.ngrok.io/view/' + storeId; 
+    }).catch(error => {
+      console.log(error);
+    });
   }
+  
   
   return (
     
@@ -82,9 +103,11 @@ export default function MenuItem(data) {
             <IconButton color="black" aria-label="add to shopping cart">
               <AddShoppingCartIcon />
             </IconButton>
-            <IconButton color="black" aria-label="buy" onClick={purchaseItem}>
-              <PaymentIcon />
-            </IconButton>
+            <a href='https://light.microsite.perxtech.io/game/1?token=2ec70d7963e3fde9930c147c884139bc3e88d8c294c3d02b90b9de79185529e4&redirect_uri=:optional_url'>
+              <IconButton color="black" aria-label="buy" onClick={purchaseItem}>
+                <PaymentIcon />
+              </IconButton>
+            </a>
           </Row>
           <Typography>
           </Typography>

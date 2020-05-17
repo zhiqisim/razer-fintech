@@ -233,7 +233,7 @@ export default function StoreFront(props) {
     ).then(reponse => {
       if (response.status < 600){
         alert('Success! Redirecting to your new store!');
-        window.location.href = 'http://localhost:3000/view/' + storeId; 
+        window.location.href = 'http://f2d8405a.ngrok.io/view/' + storeId; 
       }
     }).catch(error => {
       console.log(error);
